@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpaBuddyIdeaProjectConfig">
+    <option name="reLastEntityCreationPackage" value="src/main/java/Entities" />
+    <option name="reverseEngineeringLastDbConnectionId" value="551f1131-dba9-45ee-97c3-817b42399222" />
+  </component>
+  <component name="PersistenceUnitSettings">
+    <persistence-units>
+      <persistence-unit moduleName="viajesMySQL25Hib" name="default" framework="JPA" ormUnit="viajesMySQL25Hib:default" defaultDataSourceId="551f1131-dba9-45ee-97c3-817b42399222" />
+    </persistence-units>
+  </component>
+</project>

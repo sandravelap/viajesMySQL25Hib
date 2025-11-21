@@ -1,0 +1,667 @@
+{
+  "snapshot": {
+    "created": "2025-11-21T11:56:19.845",
+    "database": {
+      "shortName": "mysql",
+      "majorVersion": "999",
+      "minorVersion": "999",
+      "productName": "MySQL",
+      "url": "jdbc://mock"
+    },
+    "objects": {
+      "liquibase.structure.core.Catalog": [
+        {
+          "catalog": {
+            "default": true,
+            "snapshotId": "d7a9100"
+          }
+        }
+      ]
+      ,
+      "liquibase.structure.core.Column": [
+        {
+          "column": {
+            "autoIncrementInformation": {
+              "incrementBy": "1!{java.math.BigInteger}",
+              "startWith": "1!{java.math.BigInteger}"
+            },
+            "certainDataType": false,
+            "name": "destino_id",
+            "nullable": false,
+            "relation": "liquibase.structure.core.Table#d7a9132",
+            "snapshotId": "d7a9131",
+            "type": {
+              "typeName": "int"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "destino_id",
+            "nullable": false,
+            "relation": "liquibase.structure.core.Table#d7a9120",
+            "snapshotId": "d7a9125",
+            "type": {
+              "typeName": "int"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "email",
+            "nullable": false,
+            "relation": "liquibase.structure.core.Table#d7a9102",
+            "snapshotId": "d7a9104",
+            "type": {
+              "columnSize": "100!{java.lang.Integer}",
+              "typeName": "varchar"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "fecha_fin",
+            "nullable": false,
+            "relation": "liquibase.structure.core.Table#d7a9120",
+            "snapshotId": "d7a9127",
+            "type": {
+              "typeName": "date"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "fecha_inicio",
+            "nullable": false,
+            "relation": "liquibase.structure.core.Table#d7a9120",
+            "snapshotId": "d7a9126",
+            "type": {
+              "typeName": "date"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "nombre",
+            "nullable": false,
+            "relation": "liquibase.structure.core.Table#d7a9102",
+            "snapshotId": "d7a9108",
+            "type": {
+              "columnSize": "100!{java.lang.Integer}",
+              "typeName": "varchar"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "nombre_destino",
+            "nullable": false,
+            "relation": "liquibase.structure.core.Table#d7a9132",
+            "snapshotId": "d7a9134",
+            "type": {
+              "columnSize": "100!{java.lang.Integer}",
+              "typeName": "varchar"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "organizador_id",
+            "nullable": false,
+            "relation": "liquibase.structure.core.Table#d7a9120",
+            "snapshotId": "d7a9123",
+            "type": {
+              "typeName": "int"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "pais",
+            "nullable": false,
+            "relation": "liquibase.structure.core.Table#d7a9132",
+            "snapshotId": "d7a9135",
+            "type": {
+              "columnSize": "100!{java.lang.Integer}",
+              "typeName": "varchar"
+            }
+          }
+        },
+        {
+          "column": {
+            "autoIncrementInformation": {
+              "incrementBy": "1!{java.math.BigInteger}",
+              "startWith": "1!{java.math.BigInteger}"
+            },
+            "certainDataType": false,
+            "name": "participacion_id",
+            "nullable": false,
+            "relation": "liquibase.structure.core.Table#d7a9110",
+            "snapshotId": "d7a9116",
+            "type": {
+              "typeName": "int"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "persona_id",
+            "nullable": false,
+            "relation": "liquibase.structure.core.Table#d7a9110",
+            "snapshotId": "d7a9113",
+            "type": {
+              "typeName": "int"
+            }
+          }
+        },
+        {
+          "column": {
+            "autoIncrementInformation": {
+              "incrementBy": "1!{java.math.BigInteger}",
+              "startWith": "1!{java.math.BigInteger}"
+            },
+            "certainDataType": false,
+            "name": "persona_id",
+            "nullable": false,
+            "relation": "liquibase.structure.core.Table#d7a9102",
+            "snapshotId": "d7a9107",
+            "type": {
+              "typeName": "int"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "presupuesto_estimado",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#d7a9120",
+            "snapshotId": "d7a9128",
+            "type": {
+              "columnSize": "10!{java.lang.Integer}",
+              "decimalDigits": "2!{java.lang.Integer}",
+              "typeName": "decimal"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "viaje_id",
+            "nullable": false,
+            "relation": "liquibase.structure.core.Table#d7a9110",
+            "snapshotId": "d7a9112",
+            "type": {
+              "typeName": "int"
+            }
+          }
+        },
+        {
+          "column": {
+            "autoIncrementInformation": {
+              "incrementBy": "1!{java.math.BigInteger}",
+              "startWith": "1!{java.math.BigInteger}"
+            },
+            "certainDataType": false,
+            "name": "viaje_id",
+            "nullable": false,
+            "relation": "liquibase.structure.core.Table#d7a9120",
+            "snapshotId": "d7a9119",
+            "type": {
+              "typeName": "int"
+            }
+          }
+        }
+      ]
+      ,
+      "liquibase.structure.core.ForeignKey": [
+        {
+          "foreignKey": {
+            "deleteRule": "importedKeyNoAction!{liquibase.structure.core.ForeignKeyConstraintType}",
+            "foreignKeyColumns": [
+              "liquibase.structure.core.Column#d7a9112"
+            ]
+            ,
+            "foreignKeyTable": "liquibase.structure.core.Table#d7a9110",
+            "name": "Participantes_Viaje_ibfk_1",
+            "primaryKeyColumns": [
+              "liquibase.structure.core.Column#d7a9119"
+            ]
+            ,
+            "primaryKeyTable": "liquibase.structure.core.Table#d7a9120",
+            "snapshotId": "d7a9118"
+          }
+        },
+        {
+          "foreignKey": {
+            "deleteRule": "importedKeyNoAction!{liquibase.structure.core.ForeignKeyConstraintType}",
+            "foreignKeyColumns": [
+              "liquibase.structure.core.Column#d7a9113"
+            ]
+            ,
+            "foreignKeyTable": "liquibase.structure.core.Table#d7a9110",
+            "name": "Participantes_Viaje_ibfk_2",
+            "primaryKeyColumns": [
+              "liquibase.structure.core.Column#d7a9107"
+            ]
+            ,
+            "primaryKeyTable": "liquibase.structure.core.Table#d7a9102",
+            "snapshotId": "d7a9138"
+          }
+        },
+        {
+          "foreignKey": {
+            "deleteRule": "importedKeyNoAction!{liquibase.structure.core.ForeignKeyConstraintType}",
+            "foreignKeyColumns": [
+              "liquibase.structure.core.Column#d7a9123"
+            ]
+            ,
+            "foreignKeyTable": "liquibase.structure.core.Table#d7a9120",
+            "name": "Viajes_ibfk_1",
+            "primaryKeyColumns": [
+              "liquibase.structure.core.Column#d7a9107"
+            ]
+            ,
+            "primaryKeyTable": "liquibase.structure.core.Table#d7a9102",
+            "snapshotId": "d7a9129"
+          }
+        },
+        {
+          "foreignKey": {
+            "deleteRule": "importedKeyNoAction!{liquibase.structure.core.ForeignKeyConstraintType}",
+            "foreignKeyColumns": [
+              "liquibase.structure.core.Column#d7a9125"
+            ]
+            ,
+            "foreignKeyTable": "liquibase.structure.core.Table#d7a9120",
+            "name": "Viajes_ibfk_2",
+            "primaryKeyColumns": [
+              "liquibase.structure.core.Column#d7a9131"
+            ]
+            ,
+            "primaryKeyTable": "liquibase.structure.core.Table#d7a9132",
+            "snapshotId": "d7a9130"
+          }
+        }
+      ]
+      ,
+      "liquibase.structure.core.Index": [
+        {
+          "index": {
+            "columns": [
+              {
+                "column": {
+                  "name": "destino_id"
+                }
+              }
+            ]
+            ,
+            "name": "PRIMARY",
+            "snapshotId": "d7a9133",
+            "table": "liquibase.structure.core.Table#d7a9132",
+            "unique": true
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              {
+                "column": {
+                  "name": "participacion_id"
+                }
+              }
+            ]
+            ,
+            "name": "PRIMARY",
+            "snapshotId": "d7a9115",
+            "table": "liquibase.structure.core.Table#d7a9110",
+            "unique": true
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              {
+                "column": {
+                  "name": "persona_id"
+                }
+              }
+            ]
+            ,
+            "name": "PRIMARY",
+            "snapshotId": "d7a9106",
+            "table": "liquibase.structure.core.Table#d7a9102",
+            "unique": true
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              {
+                "column": {
+                  "name": "viaje_id"
+                }
+              }
+            ]
+            ,
+            "name": "PRIMARY",
+            "snapshotId": "d7a9121",
+            "table": "liquibase.structure.core.Table#d7a9120",
+            "unique": true
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              {
+                "column": {
+                  "name": "destino_id"
+                }
+              }
+            ]
+            ,
+            "name": "destino_id",
+            "snapshotId": "d7a9124",
+            "table": "liquibase.structure.core.Table#d7a9120",
+            "unique": false
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              {
+                "column": {
+                  "name": "email"
+                }
+              }
+            ]
+            ,
+            "name": "email",
+            "snapshotId": "d7a9105",
+            "table": "liquibase.structure.core.Table#d7a9102",
+            "unique": true
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              {
+                "column": {
+                  "name": "organizador_id"
+                }
+              }
+            ]
+            ,
+            "name": "organizador_id",
+            "snapshotId": "d7a9122",
+            "table": "liquibase.structure.core.Table#d7a9120",
+            "unique": false
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              {
+                "column": {
+                  "name": "persona_id"
+                }
+              }
+            ]
+            ,
+            "name": "persona_id",
+            "snapshotId": "d7a9117",
+            "table": "liquibase.structure.core.Table#d7a9110",
+            "unique": false
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              {
+                "column": {
+                  "name": "viaje_id"
+                }
+              },
+              {
+                "column": {
+                  "name": "persona_id"
+                }
+              }
+            ]
+            ,
+            "name": "uk_viaje_persona",
+            "snapshotId": "d7a9114",
+            "table": "liquibase.structure.core.Table#d7a9110",
+            "unique": true
+          }
+        }
+      ]
+      ,
+      "liquibase.structure.core.PrimaryKey": [
+        {
+          "primaryKey": {
+            "backingIndex": "liquibase.structure.core.Index#d7a9133",
+            "columns": [
+              "liquibase.structure.core.Column#d7a9131"
+            ]
+            ,
+            "name": "PRIMARY",
+            "snapshotId": "d7a9136",
+            "table": "liquibase.structure.core.Table#d7a9132"
+          }
+        },
+        {
+          "primaryKey": {
+            "backingIndex": "liquibase.structure.core.Index#d7a9115",
+            "columns": [
+              "liquibase.structure.core.Column#d7a9116"
+            ]
+            ,
+            "name": "PRIMARY",
+            "snapshotId": "d7a9139",
+            "table": "liquibase.structure.core.Table#d7a9110"
+          }
+        },
+        {
+          "primaryKey": {
+            "backingIndex": "liquibase.structure.core.Index#d7a9106",
+            "columns": [
+              "liquibase.structure.core.Column#d7a9107"
+            ]
+            ,
+            "name": "PRIMARY",
+            "snapshotId": "d7a9109",
+            "table": "liquibase.structure.core.Table#d7a9102"
+          }
+        },
+        {
+          "primaryKey": {
+            "backingIndex": "liquibase.structure.core.Index#d7a9121",
+            "columns": [
+              "liquibase.structure.core.Column#d7a9119"
+            ]
+            ,
+            "name": "PRIMARY",
+            "snapshotId": "d7a9137",
+            "table": "liquibase.structure.core.Table#d7a9120"
+          }
+        }
+      ]
+      ,
+      "liquibase.structure.core.Schema": [
+        {
+          "schema": {
+            "catalog": "liquibase.structure.core.Catalog#d7a9100",
+            "default": true,
+            "name": "viajes_db",
+            "snapshotId": "d7a9101"
+          }
+        }
+      ]
+      ,
+      "liquibase.structure.core.Table": [
+        {
+          "table": {
+            "columns": [
+              "liquibase.structure.core.Column#d7a9131",
+              "liquibase.structure.core.Column#d7a9134",
+              "liquibase.structure.core.Column#d7a9135"
+            ]
+            ,
+            "indexes": [
+              "liquibase.structure.core.Index#d7a9133"
+            ]
+            ,
+            "name": "Destinos",
+            "primaryKey": "liquibase.structure.core.PrimaryKey#d7a9136",
+            "schema": "liquibase.structure.core.Schema#d7a9101",
+            "snapshotId": "d7a9132"
+          }
+        },
+        {
+          "table": {
+            "columns": [
+              "liquibase.structure.core.Column#d7a9116",
+              "liquibase.structure.core.Column#d7a9112",
+              "liquibase.structure.core.Column#d7a9113"
+            ]
+            ,
+            "indexes": [
+              "liquibase.structure.core.Index#d7a9115",
+              "liquibase.structure.core.Index#d7a9117"
+            ]
+            ,
+            "name": "Participantes_Viaje",
+            "outgoingForeignKeys": [
+              "liquibase.structure.core.ForeignKey#d7a9118",
+              "liquibase.structure.core.ForeignKey#d7a9138"
+            ]
+            ,
+            "primaryKey": "liquibase.structure.core.PrimaryKey#d7a9139",
+            "schema": "liquibase.structure.core.Schema#d7a9101",
+            "snapshotId": "d7a9110",
+            "uniqueConstraints": [
+              "liquibase.structure.core.UniqueConstraint#d7a9111"
+            ]
+            
+          }
+        },
+        {
+          "table": {
+            "columns": [
+              "liquibase.structure.core.Column#d7a9107",
+              "liquibase.structure.core.Column#d7a9108",
+              "liquibase.structure.core.Column#d7a9104"
+            ]
+            ,
+            "indexes": [
+              "liquibase.structure.core.Index#d7a9106"
+            ]
+            ,
+            "name": "Personas",
+            "primaryKey": "liquibase.structure.core.PrimaryKey#d7a9109",
+            "schema": "liquibase.structure.core.Schema#d7a9101",
+            "snapshotId": "d7a9102",
+            "uniqueConstraints": [
+              "liquibase.structure.core.UniqueConstraint#d7a9103"
+            ]
+            
+          }
+        },
+        {
+          "table": {
+            "columns": [
+              "liquibase.structure.core.Column#d7a9119",
+              "liquibase.structure.core.Column#d7a9123",
+              "liquibase.structure.core.Column#d7a9125",
+              "liquibase.structure.core.Column#d7a9126",
+              "liquibase.structure.core.Column#d7a9127",
+              "liquibase.structure.core.Column#d7a9128"
+            ]
+            ,
+            "indexes": [
+              "liquibase.structure.core.Index#d7a9121",
+              "liquibase.structure.core.Index#d7a9122",
+              "liquibase.structure.core.Index#d7a9124"
+            ]
+            ,
+            "name": "Viajes",
+            "outgoingForeignKeys": [
+              "liquibase.structure.core.ForeignKey#d7a9129",
+              "liquibase.structure.core.ForeignKey#d7a9130"
+            ]
+            ,
+            "primaryKey": "liquibase.structure.core.PrimaryKey#d7a9137",
+            "schema": "liquibase.structure.core.Schema#d7a9101",
+            "snapshotId": "d7a9120"
+          }
+        }
+      ]
+      ,
+      "liquibase.structure.core.UniqueConstraint": [
+        {
+          "uniqueConstraint": {
+            "backingIndex": "liquibase.structure.core.Index#d7a9105",
+            "clustered": false,
+            "columns": [
+              "liquibase.structure.core.Column#d7a9104"
+            ]
+            ,
+            "deferrable": false,
+            "disabled": false,
+            "initiallyDeferred": false,
+            "name": "email",
+            "snapshotId": "d7a9103",
+            "table": "liquibase.structure.core.Table#d7a9102",
+            "validate": true
+          }
+        },
+        {
+          "uniqueConstraint": {
+            "backingIndex": "liquibase.structure.core.Index#d7a9114",
+            "clustered": false,
+            "columns": [
+              "liquibase.structure.core.Column#d7a9112",
+              "liquibase.structure.core.Column#d7a9113"
+            ]
+            ,
+            "deferrable": false,
+            "disabled": false,
+            "initiallyDeferred": false,
+            "name": "uk_viaje_persona",
+            "snapshotId": "d7a9111",
+            "table": "liquibase.structure.core.Table#d7a9110",
+            "validate": true
+          }
+        }
+      ]
+      
+    },
+    "snapshotControl": {
+      "snapshotControl": {
+        "includedType": [
+          "liquibase.structure.core.Catalog",
+          "liquibase.structure.core.Column",
+          "liquibase.structure.core.ForeignKey",
+          "liquibase.structure.core.Index",
+          "liquibase.structure.core.PrimaryKey",
+          "liquibase.structure.core.Schema",
+          "liquibase.structure.core.Sequence",
+          "liquibase.structure.core.Table",
+          "liquibase.structure.core.UniqueConstraint",
+          "liquibase.structure.core.View"
+        ]
+        
+      }
+    }
+  }
+}

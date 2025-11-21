@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_2.xsd"
+             version="3.2">
+    <persistence-unit name="default">
+
+        <class>Entities.Destino</class>
+        <class>Entities.ParticipantesViaje</class>
+        <class>Entities.Persona</class>
+        <class>Entities.Viaje</class>
+
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3606/viajes_db"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value="root"/>
+        </properties>
+    </persistence-unit>
+</persistence>
