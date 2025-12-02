@@ -2,7 +2,10 @@ package Entities;
 
 import jakarta.persistence.*;
 
-import java.sql.Date;
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "Viajes")
@@ -21,13 +24,16 @@ public class Viaje {
     private Destino destino;
 
     @Column(name = "fecha_inicio", nullable = false)
-    private Date fechaInicio;
+    private LocalDate fechaInicio;
 
     @Column(name = "fecha_fin", nullable = false)
-    private Date fechaFin;
+    private LocalDate fechaFin;
 
-    @Column(name = "presupuesto_estimado")
-    private Double presupuestoEstimado;
+    @Column(name = "presupuesto_estimado", precision = 10, scale = 2)
+    private BigDecimal presupuestoEstimado;
+
+    @OneToMany(mappedBy = "viaje", cascade = CascadeType.REMOVE)
+    private Set<ParticipantesViaje> participantesViajes = new LinkedHashSet<>();
 
     public Integer getId() {
         return id;
@@ -53,28 +59,36 @@ public class Viaje {
         this.destino = destino;
     }
 
-    public Date getFechaInicio() {
+    public LocalDate getFechaInicio() {
         return fechaInicio;
     }
 
-    public void setFechaInicio(Date fechaInicio) {
+    public void setFechaInicio(LocalDate fechaInicio) {
         this.fechaInicio = fechaInicio;
     }
 
-    public Date getFechaFin() {
+    public LocalDate getFechaFin() {
         return fechaFin;
     }
 
-    public void setFechaFin(Date fechaFin) {
+    public void setFechaFin(LocalDate fechaFin) {
         this.fechaFin = fechaFin;
     }
 
-    public Double getPresupuestoEstimado() {
+    public BigDecimal getPresupuestoEstimado() {
         return presupuestoEstimado;
     }
 
-    public void setPresupuestoEstimado(Double presupuestoEstimado) {
+    public void setPresupuestoEstimado(BigDecimal presupuestoEstimado) {
         this.presupuestoEstimado = presupuestoEstimado;
+    }
+
+    public Set<ParticipantesViaje> getParticipantesViajes() {
+        return participantesViajes;
+    }
+
+    public void setParticipantesViajes(Set<ParticipantesViaje> participantesViajes) {
+        this.participantesViajes = participantesViajes;
     }
 
 }

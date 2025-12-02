@@ -14,8 +14,8 @@ public class ParticipantesViaje {
     @JoinColumn(name = "viaje_id", nullable = false)
     private Viaje viaje;
 
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "persona_id", nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY, optional = true)
+    @JoinColumn(name = "persona_id", nullable = true)
     private Persona persona;
 
     public Integer getId() {

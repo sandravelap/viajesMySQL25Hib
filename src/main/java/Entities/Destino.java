@@ -19,7 +19,8 @@ public class Destino {
     @Column(name = "pais", nullable = false, length = 100)
     private String pais;
 
-    @OneToMany(mappedBy = "destino")
+    @OneToMany
+    @JoinColumn(name = "destino_id")
     private Set<Viaje> viajes = new LinkedHashSet<>();
 
     public Integer getId() {
